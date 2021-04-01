@@ -32,7 +32,7 @@
             id="card-numbers"
             placeholder="8888-8888-8888-8888"
             required
-            pattern="[0-9]+"
+            pattern="[0-9\s]+"
           />
         </div>
         <div class="container-expiration-security">
@@ -68,7 +68,7 @@
           </div>
           <div class="security-input">
               <label for="crypto">Cryptogramme</label>
-              <input type="text" name="crypto" id="crypto" required maxlength="3">
+              <input type="text" name="crypto" id="crypto" required maxlength="3" placeholder="XXX" pattern="[0-9]{3}">
           </div>
         </div>
         <div class="btn-container">
