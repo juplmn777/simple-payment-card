@@ -8,6 +8,75 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="item">
+        <p>1 <strong>vinyle</strong> : 29€</p>
+      </div>
+      <form>
+        <div class="full-length-inputs">
+          <label for="nom">Titulaire</label>
+          <input
+            type="text"
+            name="titulaire"
+            id="nom"
+            placeholder="Titulaire de la carte..."
+            required
+            maxlength="30"
+          />
+        </div>
+        <div class="full-length-inputs">
+          <label for="card-number">Numéros</label>
+          <input
+            type="text"
+            name="card-number"
+            id="card-numbers"
+            placeholder="8888-8888-8888-8888"
+            required
+            pattern="[0-9]+"
+          />
+        </div>
+        <div class="container-expiration-security">
+          <div class="expiration-input">
+            <label for="expiration"></label>
+            <select name="expiration-month" id="expiration" class="select1">
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <span>/</span>
+            <select name="expiration-year" class="select2">
+              <option value="1">2021</option>
+              <option value="2">2022</option>
+              <option value="3">2023</option>
+              <option value="4">2024</option>
+              <option value="5">2025</option>
+              <option value="6">2026</option>
+              <option value="7">2027</option>
+              <option value="8">2028</option>
+              <option value="9">2029</option>
+              <option value="10">2030</option>
+            </select>
+          </div>
+          <div class="security-input">
+              <label for="crypto"></label>
+              <input type="text" name="crypto" id="crypto" required maxlength="3">
+          </div>
+        </div>
+        <div class="btn-container">
+            <button>Confirmer & payer</button>
+        </div>
+      </form>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
