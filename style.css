@@ -1,0 +1,151 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #232323;
+}
+
+.container {
+  width: 550px;
+  height: 500px;
+  background: #f1f1f1;
+  margin: 100px auto;
+  border-radius: 5px;
+}
+
+.item {
+  text-align: center;
+  font-size: 25px;
+  height: 90px;
+  border-bottom: 1px dashed #000;
+}
+
+.item p {
+  line-height: 90px;
+}
+
+.full-length-inputs {
+  width: 100%;
+  height: 100px;
+}
+
+.full-length-inputs:nth-child(1) {
+  border-bottom: 1px dashed #000;
+}
+
+.full-length-inputs label {
+  float: left;
+  width: 30%;
+  height: 100%;
+  font-size: 22px;
+  display: block;
+  line-height: 96px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.full-length-inputs input {
+  width: 70%;
+  height: 100%;
+  border: none;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.full-length-inputs input::placeholder {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+input:active,
+input:focus {
+  outline: none;
+  background: #f1f1f1;
+}
+
+.container-expiration-security {
+  width: 100%;
+  height: 80px;
+  border-top: 1px dashed #000;
+  border-bottom: 1px dashed #000;
+}
+
+.expiration-input {
+  width: 48%;
+  height: 100%;
+  float: left;
+  border-right: 1px dashed #000;
+}
+
+.expiration-input label {
+  font-size: 18px;
+  line-height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+select {
+  border: none;
+}
+
+.select2 {
+  width: 60px;
+}
+
+.security-input {
+  width: 52%;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+
+.security-input label {
+  float: left;
+  width: 45%;
+  line-height: 76px;
+  padding-left: 15px;
+}
+
+.security-input input {
+  width: 55%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+}
+
+.security-input input::placeholder {
+  opacity: 0.8;
+}
+
+.btn-container {
+  position: relative;
+  height: 150px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+}
+
+.btn-container button {
+  background: #c2c2c2;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.2s ease background;
+}
+
+button:hover {
+    background: lightblue;
+}
